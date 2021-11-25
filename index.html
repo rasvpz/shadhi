@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/f3afe8f86a.js" crossorigin="anonymous"></script>
+  <style>
+      .bg-primary{
+
+          background-image: url('banner1.jpg');
+          height: 700px;
+          background-position: center;
+          position:relative;
+      }
+
+      .newContainer{
+          margin-left: 10%;
+          margin-top: 4% !important;
+      }
+      .mrgright{
+          float: right;
+          margin-right: 10%;
+          margin-top: 2%;
+
+      }
+      .p-5 {
+        padding: 3rem !important;
+
+    }
+    .tCentr{
+          margin-top: 20%;
+          text-shadow: 2px 2px 4px black;
+      }
+      .formBg{
+          background-color: black;
+          height: 100px;
+          opacity: 0.5;
+          margin-top: 170px;
+          padding: 4%;
+
+      }
+      .form-control{
+          margin-bottom: 4px;
+      }
+
+      .myShow{
+        display: none;
+        margin-top: -170px;
+      }
+.fas{
+  padding-top:20px;
+  color:blue;
+  font-size:75px;
+  border: 1px solid blue;
+   border-radius: 100%;
+   padding: auto;
+    width: 130px;
+    height: 130px
+}
+a{
+  text-decoration: none;
+}
+
+
+ .card:hover{
+  box-shadow: 1px 1px 10px 0px grey;
+  animation-name: example;
+ }
+
+ .bg-danger{
+   width: 100%;
+ }
+ div.myPink{
+  font-size: 2em; 
+  color: white;
+  position: -webkit-sticky;
+  position: fixed;
+ }
+
+      @media screen and (max-width: 480px) {
+        .newContainer{
+          margin-left: 0%;
+          margin-top: 4% !important;
+      }
+      .mrgright{
+          float: right;
+          margin-right: 4%;
+          margin-top: 2%;
+      }
+      .p-5 {
+        padding: 0rem !important;
+        padding-top: 6% !important;
+    }
+    .bg-primary{
+        background-image: url('bannerMob1.jpg');
+           background-position: center;
+           height: 470px;
+      }
+      .tCentr{
+          margin-left: 0%;
+      }
+      .tCentr{
+          margin-top: 40%;
+      }
+      h1{
+        font-size: 20px !important;
+      }
+      .myHide{
+        display: none;
+      }
+      .myShow{
+        display: block;
+      }
+      tbody, td, tfoot, th, thead, tr {
+      border-color: inherit;
+      border-style: none !important;
+      border-width: 0;
+}
+.formBg {
+    background-color: black;
+    height: 190px;
+    opacity: 0.5;
+    margin-top: 0px;
+    padding: 4%;
+}
+ .myPink{
+  font-size: 1em; 
+  color: white;
+ }
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid p-5 bg-primary text-white">
+    <span class="container newContainer"><img src="logo.png"><span class="mrgright">Login  Help</span></span>
+<div class="text-center tCentr">
+  <h1>Trusted Matrimony & Matchmaking Service</h1>
+  <div class="formBg">
+
+  </div> 
+
+
+  <div style="z-index:1 !important;position:relative; margin-top: -65px; margin-left: 40px;  margin-right: 40px;">
+    <div class="row myHide">
+
+      <div class="col-lg-2 col-sm-4  col-4">
+        <input type="text" class="form-control" placeholder="Women" name="email">
+      </div>
+
+      <div class="col-lg-2 col-sm-4  col-4">
+        <input type="password" class="form-control" placeholder="Age" name="pswd">
+      </div>
+
+      
+      <div class="col-lg-2 col-sm-4  col-4">
+        <input type="password" class="form-control" placeholder="Age" name="pswd">
+      </div>
+
+      
+      <div class="col-lg-2 col-sm-4  col-4">
+        <input type="password" class="form-control" placeholder="Religion" name="pswd">
+      </div>
+
+      
+      <div class="col-lg-2 col-sm-4  col-4">
+        <input type="password" class="form-control" placeholder="Language" name="pswd">
+      </div>
+
+      
+      <div class="col-lg-2 col-sm-4  col-4">
+        <input type="submit" class="form-control btn btn-info" value="Let's Begin" name="pswd">
+      </div>
+
+    </div>
+
+
+    <div class="row myShow">
+
+      <div class="col-sm-12 col-xs-12">
+      <table class="table">
+        <tr>
+          <td><input style="width: 100px;" class="form-control"  type="text"  placeholder="Enter email" name="email" value="Female"></td>
+          <td> <input  style="width: 70px;" class="form-control"  type="text" placeholder="Enter email" name="email" value="25"></td>
+          <td><input type="text" style="width: 70px;" class="form-control" placeholder="Enter email" name="email" value="30"></td>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+
+            <table>
+              <tr>
+                <td><input style="width: 150px; margin-right: 20px;" class="form-control"  type="text"  placeholder="Enter email" name="email" value="Female"></td>
+                <td><input style="width: 150px;" class="form-control"  type="text"  placeholder="Enter email" name="email" value="Female"></td>
+              </tr>
+            </table>
+            
+            </td>
+         
+        </tr>
+        <tr>
+          <td  colspan="3"><input type="submit" class="form-control btn btn-info" value="Let's Begin" name="pswd"></td>
+        </tr>
+
+      </table>
+        
+      </div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+  
+<div class="container mt-5">
+  <h1 class="text-center pb-5 text-danger">Find your Special Someone</h1>
+  <div class="row">
+    <div class="col-sm-4 text-center pb-5">
+      <i class='fas fa-edit'></i>
+      <h1 class="pb-2 pt-2">Sign Up</h1>
+      <p>Register for free & put up your Matrimony Profile</p>
+    </div>
+
+    <div class="col-sm-4 text-center pb-5">
+      <i class="fas fa-users"></i>
+      <h1 class="pb-2 pt-2">Connect</h1>
+      <p>Select & Connect with Matches you like</p>
+    </div>
+
+    <div class="col-sm-4 text-center pb-5">
+      <i class="fas fa-plug"></i>
+      <h1 class="pb-2 pt-2">Interact</h1>
+      <p>Become a Premium Member & Start a Conversation</p>
+    </div>
+
+  </div>
+</div>
+
+<div style="width: 100%; background-color:rgb(205, 212, 247);">
+<div style="background-color: rgb(205, 212, 247);" class="container mt-5">
+  <h1 class="text-center pb-5 pt-5 text-danger">Introducing Shaadi Meet!</h1>
+  <div class="row">
+
+    <div class="col-sm-4 col-lg-6 text-center pb-5">
+      <img class="img-fluid" src="https://img2.shaadi.com/assests/2020/images/Home-Couple-Optimized.png">      
+    </div>
+
+
+
+    <div class="col-sm-4 col-lg-6 text-center pb-5">
+      <img src="https://img2.shaadi.com/assests/2020/images/meet-badge.svg"><br><br>
+      <h3 class="pb-2 pt-2">Now meet your Matches over <br> video call</h3>
+      <hr style="width: 25%; margin-left: 37%;"><br>
+      <p>Available on the Shaadi.com App</p><br>
+      <span><img src="https://img2.shaadi.com/assests/2021/images/Matrimony-App-Shaadi.com-Playstore.svg"></span> <span><img src="https://img2.shaadi.com/assests/2021/images/Matrimony-App-Shaadi.com-Appstore.svg"></span>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <h1 class="text-danger text-center">Matrimony Service with Millions of Success Stories</h1>
+    <div class="col-sm-12 col-lg-4 p-3">
+      <div class="card" style="width: auto">
+        <img class="card-img-top img-fluid" src="https://img.shaadi.com/success-story/3SH68027221-hSH33597146-big.jpg" alt="Card image" style="width:100%">
+        <div class="card-body"><br>
+          <h4 class="card-title">Ravneeth & Simrata</h4>
+          <p class="card-text">Im so happy that Ravneet found me on punjabi Shaadi.com. 
+            Im so thankful and grateful for everything :) Vibe Teri Meri mildi aw ;) ... <a href="#">Read More</a>   </p><br>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-lg-4 p-3">
+      <div class="card" style="width: auto">
+        <img class="card-img-top img-fluid" src="https://img.shaadi.com/success-story/6SH77338465-2SH00297513-big.jpg" alt="Card image" style="width:100%">
+        <div class="card-body"><br>
+          <h4 class="card-title">Maulik & Pooja</h4>
+          <p class="card-text">Im so happy that Ravneet found me on punjabi Shaadi.com. 
+            Im so thankful and grateful for everything :) Vibe Teri Meri mildi aw ;) ... <a href="#">Read More</a></p><br>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-lg-4 p-3">
+      <div class="card" style="width: auto">
+        <img class="card-img-top img-fluid" src="https://img.shaadi.com/success-story/7SH53335629-2SH06414413-big.jpg" alt="Card image" style="width:100%">
+        <div class="card-body"><br>
+          <h4 class="card-title">Yogesh & Barthi</h4>
+          <p class="card-text">Im so happy that Ravneet found me on punjabi Shaadi.com. 
+            Im so thankful and grateful for everything :) Vibe Teri Meri mildi aw ;) ... <a href="#">Read More</a>   </p><br>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<br>
+<div class="pt-5 pb-5 bg-danger text-center">
+<span class="myPink text-white">Your story is waiting to happen!</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span> <input class="text-white" style="background-color: transparent; border: 1px solid white; padding:8px;" type="button" value="Get Startded"> </span>
+</div>
+
+
+<div class=" container pt-5 text-center"><img class="pb-5" src="logobottom.jpg">
+
+<p style="text-align: left;">Shaadi.com, India’s No.1 Matchmaking and Matrimony Service, was founded with a simple objective - to help people find happiness. Shaadi.com is a leader in what is sometimes known as the matrimony category, we have touched more than 35 million lives.</p>
+
+<p style="text-align: left;">Shaadi.com - a trusted matrimonial & matchmaking service, has always differentiated itself from other matrimonials through its innovation-led approach by redefining the way Indian brides and grooms meet for marriage.</p>
+
+<p style="text-align: left;">We have also created trusted and renowned community specific matrimony platforms such as TamilShaadi.com, TeluguShaadi.com, MalayaleeShaadi.com, KannadaShaadi.com, BengaliShaadi.com, GujaratiShaadi.com, MarathiShaadi.com, PunjabiShaadi.com and more that has changed the way of finding a life partner.</p>
+
+<p style="text-align: left;">Shaadi.com (sometimes mis-spelt as Shadi.com, Shadhi.com or Sadi.com) is a social networking site specialising in matchmaking and not just a matrimonial service.</p>
+</div>
+</body>
+</html>
